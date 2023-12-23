@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="bmi-description">
+        <h1 class="bmi-title">Body Mass Index Calculator</h1>
+        <p class="bmi-content">
+          Better understand your weight in relation to your height using our
+          body mass index (BM) calculator. While BMI is not the sole determinant
+          of a healthy weight, it offers a valuable starting point to evaluate
+          your overall health and well-being.
+        </p>
+
+        <div class="bmi-modal">
+          <p class="modal-title">Enter your details below</p>
+          <form id="bmi-form">
+            <div class="radio-wrapper">
+              <div class="radio-label">
+                <input type="radio" name="bmi-type" id="metric" />
+                <label for="metric" id="bmi-type-label">Metric</label>
+              </div>
+
+              <div class="radio-label">
+                <input type="radio" name="bmi-type" id="imperial" />
+                <label for="imperial" id="bmi-type-label">Imperial</label>
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <div class="input-label-wrapper">
+                <label for="height" id="input-label">Height</label>
+                <div class="input-field-wrapper">
+                  <input type="text" id="input-height" placeholder="0" />
+                  <span>cm</span>
+                </div>
+              </div>
+              <div class="input-label-wrapper">
+                <label for="height" id="input-label">Weight</label>
+                <div class="input-field-wrapper">
+                  <input type="text" id="input-weight" placeholder="0" />
+                  <span>kg</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="instruction-wrapper">
+              <h1 class="instruction-title">Welcome!</h1>
+              <p class="instruction-note">
+                Enter your height and weight and you’ll see your BMI result here
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

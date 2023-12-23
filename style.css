@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+.app {
+  height: 100vh;
+}
+
+.bmi-description {
+  width: 65%;
+  height: 55%;
+  flex-shrink: 0;
+  border-radius: 0px 0px 35px 35px;
+  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 116px;
+  position: relative;
+}
+
+.bmi-title {
+  width: 46%;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -3.2px;
+  margin-bottom: 35px;
+  color: #253347;
+}
+
+.bmi-content {
+  width: 46%;
+  white-space: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e6e85;
+}
+
+.bmi-modal {
+  width: 50%;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #fff;
+  position: absolute;
+  left: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+
+.modal-title {
+  color: #253347;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin-bottom: 32px;
+}
+
+.radio-wrapper {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.radio-label {
+  cursor: pointer;
+  width: 50%;
+  #bmi-type-label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+
+  .input-label-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    label {
+      color: #5e6e85;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .input-field-wrapper {
+      position: relative;
+
+      input {
+        text-decoration: none;
+        padding: 20px 24px;
+        border-radius: 12px;
+        border: 1px solid #d8e2e7;
+        margin-top: 8px;
+        width: 80%;
+
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -1.2px;
+        color: #253347;
+        opacity: 0.25;
+      }
+
+      span {
+        color: #345ff6;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -1.2px;
+        position: absolute;
+        right: 75px;
+        top: 54%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.instruction-wrapper {
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 16px 60px 60px 16px;
+  background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+  color: #fff;
+
+  .instruction-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    margin-bottom: 16px;
+  }
+
+  .instruction-note {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
