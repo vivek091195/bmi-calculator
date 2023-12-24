@@ -22,6 +22,15 @@
   padding-left: 116px;
   position: relative;
 
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    padding: 24px;
+    justify-content: flex-start;
+    height: 100%;
+    position: static;
+    margin-left: 0;
+  }
+
   .bmi-title {
     width: 46%;
     font-size: 64px;
@@ -29,6 +38,15 @@
     letter-spacing: -3.2px;
     margin-bottom: 35px;
     color: #253347;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      font-size: 48px;
+      letter-spacing: -2.4px;
+      line-height: 110%;
+      margin-bottom: 24px;
+    }
   }
 
   .bmi-content {
@@ -37,6 +55,12 @@
     font-size: 16px;
     font-weight: 400;
     color: #5e6e85;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      line-height: 150%;
+      text-align: center;
+    }
   }
 
   .bmi-modal {
@@ -50,6 +74,13 @@
     display: flex;
     flex-direction: column;
     box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      position: unset;
+      transform: unset;
+      margin-top: 48px;
+    }
   }
 
   .modal-title {
@@ -82,6 +113,11 @@
       flex-direction: column;
       width: 50%;
 
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+        margin-top: 16px;
+      }
+
       label {
         color: #5e6e85;
         font-size: 14px;
@@ -105,6 +141,10 @@
           letter-spacing: -1.2px;
           color: #253347;
           opacity: 0.25;
+
+          @media only screen and (max-width: 480px) {
+            width: 100%;
+          }
         }
 
         span {
@@ -116,8 +156,16 @@
           right: 75px;
           top: 54%;
           transform: translateY(-50%);
+
+          @media only screen and (max-width: 480px) {
+            right: 24px;
+          }
         }
       }
+    }
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
     }
   }
 
@@ -127,6 +175,10 @@
     border-radius: 16px 60px 60px 16px;
     background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
     color: #fff;
+
+    @media only screen and (max-width: 480px) {
+      border-radius: 16px;
+    }
 
     .instruction-title {
       font-size: 24px;
@@ -149,8 +201,20 @@
   margin-top: 64px;
   padding: 0 140px;
 
+  @media only screen and (max-width: 480px) {
+    padding: 0;
+    margin-top: 350px;
+    flex-direction: column;
+  }
+
   .bmi-definition-wrapper {
     width: 40%;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      margin-top: 48px;
+      padding: 0 24px;
+    }
 
     .bmi-definition-title {
       color: #253347;
@@ -158,6 +222,11 @@
       font-weight: 600;
       letter-spacing: -2.4px;
       margin-bottom: 35px;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+      }
     }
 
     .bmi-definition {
@@ -179,6 +248,13 @@
   border-radius: 35px;
   background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
 
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 56px 24px;
+    margin: 72px 0 0 0;
+    border-radius: 0;
+  }
+
   .bmi-component-wrapper {
     .component-title {
       margin: 45px 0 24px;
@@ -186,6 +262,10 @@
       font-size: 24px;
       font-weight: 600;
       letter-spacing: -1.2px;
+
+      @media only screen and (max-width: 480px) {
+        margin: 32px 0 24px;
+      }
     }
 
     .component-description {
@@ -204,6 +284,11 @@
   padding: 0 140px;
   position: relative;
 
+  @media only screen and (max-width: 480px) {
+    padding: 0 24px;
+    margin-top: 72px;
+  }
+
   .limitations-title {
     color: #253347;
     font-size: 48px;
@@ -211,6 +296,13 @@
     line-height: 110%;
     letter-spacing: -2.4px;
     width: 50%;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: -1.6px;
+    }
   }
 
   .limitations-description {
@@ -220,6 +312,11 @@
     font-weight: 400;
     line-height: 150%;
     width: 50%;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .card {
@@ -228,6 +325,13 @@
     padding: 32px;
     border-radius: 16px;
     box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+
+    @media only screen and (max-width: 480px) {
+      position: unset;
+      width: 100%;
+      padding: 24px;
+      margin-top: 16px;
+    }
 
     .card-header {
       display: flex;
